@@ -1,7 +1,7 @@
 import './globals.css';
-import { Syne } from 'next/font/google';
+import { IBM_Plex_Mono } from 'next/font/google';
 
-const syne = Syne({ subsets: ['latin'] });
+const plexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
 	title: '9D8 Development Studio | Bridger Tower and Cameron Youngblood',
@@ -29,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html className="bg-[#222] text-white" lang="en">
-			<body className={syne.className}>{children}</body>
+			<body className={plexMono.className}>{children}</body>
 		</html>
 	);
 }

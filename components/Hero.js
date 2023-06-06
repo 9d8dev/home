@@ -1,17 +1,25 @@
-import Section from './parts/Section';
+import Section from '@/components/parts/Section';
+import Logo from '@/public/9d8.svg';
+import Image from 'next/image';
 
 const Hero = () => {
 	return (
-		<div className="h-screen w-screen relative">
+		<div className="h-screen w-screen relative bg-cover md:bg-center bg-[url('https://i.giphy.com/media/3og0INSAmR6cH4cbug/giphy.webp')]">
 			<Section>
-				<div className="hero__content">
-					<h1 className="hero__title">9d8 Development Studio</h1>
-					<h3 className="hero__description">
+				<div className="flex flex-col gap-4">
+					<h1 className="text-2xl md:text-4xl">9d8 Development Studio</h1>
+					<h3 className="text-lg max-w-[720px]">
 						We are a development studio that specializes in web and software development. Using
 						Next.js, Svelte, React, Ruby on Rails, PHP, and Laravel.
 					</h3>
 				</div>
 			</Section>
+			<Image
+				src={Logo}
+				alt="9D8 Logo"
+				width={1080}
+				className="md:fixed absolute bottom-0 right-0"
+			/>
 		</div>
 	);
 };
