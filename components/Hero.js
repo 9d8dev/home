@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Hero = () => {
 	return (
-		<div className="h-screen w-screen relative bg-cover md:bg-center bg-[url('https://i.giphy.com/media/3og0INSAmR6cH4cbug/giphy.webp')]">
+		<div className="h-screen max-h-screen w-screen relative bg-cover md:bg-center bg-[url('https://i.giphy.com/media/3og0INSAmR6cH4cbug/giphy.webp')]">
 			<Section>
 				<div className="flex flex-col gap-4">
 					<h1 className="text-2xl md:text-4xl">9d8 Development Studio</h1>
