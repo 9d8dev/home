@@ -12,6 +12,9 @@ const Hero = () => {
 						We are a development studio that specializes in web and software development. Using
 						Next.js, Svelte, React, Ruby on Rails, PHP, and Laravel.
 					</h3>
+					<a className="block border-b w-fit hover:text-yellow-100" href="mailto:9d8dev@gmail.com">
+						Contact us
+					</a>
 				</div>
 			</Section>
 			<Image
