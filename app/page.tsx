@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col container">
-      <section className="mt-6 border-b py-4">
+    <main className="flex min-h-screen flex-col container divide-y">
+      <section className="mt-6 py-4">
         <div className="space-y-1">
           <h1 className="text-xl font-bold uppercase">
             Design and development Studio
@@ -11,7 +11,7 @@ export default function Home() {
           <p className="text-slate-400">Rooted in innovation and creativity</p>
         </div>
       </section>
-      <section className="mt-6 border-b py-4">
+      <section className="mt-6 py-4">
         <div className="space-y-1">
           <h2 className="font-bold uppercase">Projects</h2>
           <p className="text-slate-400">Some of our work.</p>
