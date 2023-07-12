@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-syne">
+      <body className="font-syne pt-10">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           {children}
