@@ -36,8 +36,8 @@ export default function Home() {
           <h1 className="text-xl font-bold uppercase">
             Design and Development Studio
           </h1>
-          <p className="text-slate-400">Rooted in innovation and creativity</p>
-          <p className="text-slate-400">founded by <a className="underline underline-offset-4" href="https://cameronyoungblood.com">Cameron Youngblood</a> and <a className="underline underline-offset-4" href="https://bridger.cc">Bridger Tower</a></p>
+          <p className="text-slate-400">Rooted in innovation and creativity.</p>
+          <p className="text-slate-400">Founded by <a className="underline underline-offset-4" href="https://cameronyoungblood.com">Cameron Youngblood</a> and <a className="underline underline-offset-4" href="https://bridger.cc">Bridger Tower</a>.</p>
         </div>
       </section>
       <section className="mt-6 py-4">
