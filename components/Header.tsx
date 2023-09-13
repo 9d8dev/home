@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
+import Image from "next/image";
+import Logo from "@/public/9d8.svg"
 
 export default function Header() {
   return (
     <header className="container">
       <div className="flex items-center justify-between border-b py-4">
         <Link className="flex font-black uppercase" href="/">
-          9D8
+          <span className="sr-only">9D8</span>
+          <Image width={100} src={Logo} alt="9d8 logo"></Image>
         </Link>
         <div className="flex items-center justify-between gap-2">
           <Link href="https://github.com/9d8dev">
