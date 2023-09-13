@@ -9,7 +9,7 @@ export default function Header() {
       <div className="flex items-center justify-between border-b py-4">
         <Link className="flex font-black uppercase" href="/">
           <span className="sr-only">9D8</span>
-          <Image width={100} src={Logo} alt="9d8 logo"></Image>
+          <Image className="dark:invert" width={100} src={Logo} alt="9d8 logo"></Image>
         </Link>
         <div className="flex items-center justify-between gap-2">
           <Link href="https://github.com/9d8dev">
