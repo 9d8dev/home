@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export default function Cover() {
   return (
-    <section className="w-screen h-screen relative flex items-center justify-center">
+    <section className="w-screen min-h-screen relative flex items-center justify-center">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <Image layout="fill" objectFit="cover" objectPosition="center" className="z-0" src={BG} alt="background image by bridger tower" />
       </motion.div>
