@@ -1,7 +1,7 @@
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
-import Header from "@/components/Header";
+import Cover from "@/components/Cover";
 
 export const metadata: Metadata = {
   title: "9d8 Software Development Studio",
@@ -15,10 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-syne pt-10">
+      <body className="font-syne">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          {children}
+          <Cover />
+          <main className="flex flex-col h-screen justify-center">
+            {children}
+          </main>
           <p className="hidden md:block text-slate-300 fixed bottom-4 right-4">© 9d8 LLC, All rights reserved.</p>
           <p className="hidden md:block text-slate-300 fixed bottom-4 left-4">contact hello__at__9d8.dev</p>
         </ThemeProvider>
