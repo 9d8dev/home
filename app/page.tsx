@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Header from "@/components/Header";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -31,7 +34,7 @@ const projects = [
 
 export default function Home() {
   return (
-    <>
+    <motion.div initial={{ opacity: 0 }} transition={{ delay: 0.5 }} whileInView={{ opacity: 1 }}>
       <Header />
       <section className="flex flex-col container divide-y">
         <div className="mt-6 py-4">
@@ -60,6 +63,6 @@ export default function Home() {
           </ul>
         </div>
       </section >
-    </>
+    </motion.div>
   );
 }
