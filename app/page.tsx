@@ -21,6 +21,11 @@ const projects = [
     description: "Design and branding for innovative brands.",
   },
   {
+    name: "autobyte",
+    link: "https://www.autobyte.dev/",
+    description: "Developement studio built differently.",
+  },
+  {
     name: "wavefinder",
     link: "https://www.wavefinder.io/",
     description: "Fully integrated AI-driven generative marketing platform.",
