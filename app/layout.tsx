@@ -32,7 +32,7 @@ export default function RootLayout({
             © 9d8 LLC, All rights reserved.
           </p>
           <p className="hidden md:block text-slate-300 fixed bottom-4 left-4">
-            contact hello__at__9d8.dev
+            contact 9d8dev__@__gmail.com
           </p>
         </ThemeProvider>
       </body>
