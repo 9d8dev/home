@@ -5,7 +5,8 @@ import Cover from "@/components/Cover";
 
 export const metadata: Metadata = {
   title: "9d8 Software Development Studio",
-  description: "(9d8 is a software development studio created by bridger tower and cameron youngblood. located in salt lake city, utah and creating software for the world.)",
+  description:
+    "9d8 is a software development studio created by bridger tower and cameron youngblood. located in salt lake city, utah and creating software for the world.",
 };
 
 export default function RootLayout({
@@ -27,8 +28,12 @@ export default function RootLayout({
           <main className="flex flex-col h-screen justify-center">
             {children}
           </main>
-          <p className="hidden md:block text-slate-300 fixed bottom-4 right-4">© 9d8 LLC, All rights reserved.</p>
-          <p className="hidden md:block text-slate-300 fixed bottom-4 left-4">contact hello__at__9d8.dev</p>
+          <p className="hidden md:block text-slate-300 fixed bottom-4 right-4">
+            © 9d8 LLC, All rights reserved.
+          </p>
+          <p className="hidden md:block text-slate-300 fixed bottom-4 left-4">
+            contact hello__at__9d8.dev
+          </p>
         </ThemeProvider>
       </body>
     </html>
