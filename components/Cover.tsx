@@ -11,6 +11,8 @@ export default function Cover() {
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <Image
           layout="fill"
+          width={500}
+          height={500}
           objectFit="cover"
           objectPosition="center"
           className="z-0"
