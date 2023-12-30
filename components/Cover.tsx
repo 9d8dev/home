@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import BG from "@/public/plane.png";
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/9d8-dark.svg";
 import { motion } from "framer-motion";
 
 export default function Cover() {
