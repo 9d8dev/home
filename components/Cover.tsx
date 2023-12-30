@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import BG from "@/public/bg.png";
+import BG from "@/public/plane.png";
 import Logo from "@/public/logo.svg";
 import { motion } from "framer-motion";
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import Image from "next/image";
-import Logo from "@/public/9d8.svg";
+import Logo from "@/public/9d8-dark.svg";
 
 export default function Header() {
   return (
