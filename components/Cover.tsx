@@ -11,8 +11,6 @@ export default function Cover() {
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <Image
           layout="fill"
-          width={500}
-          height={500}
           objectFit="cover"
           objectPosition="center"
           className="z-0"
@@ -21,8 +19,8 @@ export default function Cover() {
           alt="background image by bridger tower"
         />
       </motion.div>
-      <motion.div className="z-50 absolute top-0 right-0 -mt-2">
-        <Image className="sticky top-0" src={Logo} alt="9d8 Logo" />
+      <motion.div className="z-50 absolute top-0 right-0 -mt-1">
+        <Image className="sticky top-0 md:w-96" src={Logo} alt="9d8 Logo" />
       </motion.div>
     </section>
   );
