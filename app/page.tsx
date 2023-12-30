@@ -6,6 +6,11 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    name: "alpine codex",
+    link: "https://www.alpinecodex.com/",
+    description: "Applied artificial intelligence.",
+  },
+  {
     name: "ampry",
     link: "https://www.ampry.com/",
     description: "Software development for performance marketing.",
@@ -21,9 +26,9 @@ const projects = [
     description: "Design and branding for innovative brands.",
   },
   {
-    name: "autobyte",
-    link: "https://www.autobyte.dev/",
-    description: "Developement studio built differently.",
+    name: "router.so",
+    link: "https://www.router.so/",
+    description: "Light-weight leads router for performance marketers.",
   },
   {
     name: "wavefinder",
@@ -34,6 +39,11 @@ const projects = [
     name: "builderkit",
     link: "https://www.builderkit.io/",
     description: "AI empowered SEO and website building toolkit.",
+  },
+  {
+    name: "outr.io",
+    link: "https://www.outr.io/",
+    description: "Launch your AI-powered sales team.",
   },
 ];
 
