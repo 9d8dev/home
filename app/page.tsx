@@ -1,3 +1,4 @@
+import Project from "@/components/project";
 import projects from "@/projects.config";
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
 
       {/* Content Grid */}
       <div className="not-prose grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-        Hello World
+        {projects.map((project) => (
+          <Project key={project.name} {...project} />
+        ))}
       </div>
 
       {/* Footer */}
