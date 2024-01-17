@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Layout } from "@/components/craft/layout";
-import Footer from "@/components/craft/sections/footer";
-import Nav from "@/components/craft/sections/nav";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "9d8 :: software design and development",
@@ -17,11 +14,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <Layout>
-      <Nav />
-      {children}
-      <Footer />
-    </Layout>
-  );
+  return <Layout className={GeistMono.className}>{children}</Layout>;
 }
