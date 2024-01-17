@@ -1,9 +1,10 @@
 import Project from "@/components/project";
 import projects from "@/projects.config";
+import { ModeToggle } from "@/components/craft/theme/theme-toggle";
 
 export default function Home() {
   return (
-    <main className="p-2 flex md:text-lg bg-neutral-900 min-h-screen text-neutral-50 flex-col gap-2">
+    <main className="p-2 h-screen overflow-hidden grid md:text-lg bg-background grid-rows-[2rem,1fr,2rem] gap-2">
       {/* Header */}
       <div className="flex text-focus-in gap-2 justify-between">
         <h1>9d8</h1>
@@ -11,19 +12,29 @@ export default function Home() {
       </div>
 
       {/* Content Grid */}
-      <div className="not-prose grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
+      <div className="not-prose gap-2 overflow-auto grid sm:grid-cols-2 md:grid-cols-3">
         {projects.map((project) => (
-          <Project key={project.name} {...project} />
+          <Project
+            key={project.name}
+            name={project.name}
+            link={project.link}
+            image={project.image}
+            desc={project.description}
+            year={project.year.toString()}
+          />
         ))}
       </div>
 
       {/* Footer */}
-      <div className="flex text-focus-in gap-2 justify-between">
+      <div className="flex text-focus-in gap-2 justify-between items-center">
         <h3>
           © <a href="https://cameron.so">Cameron</a> and{" "}
           <a href="https://bridger.to">Bridger</a> 1998 to present
         </h3>
-        <h4>contact: hello @ 9d8.dev</h4>
+        <div className="flex w-fit gap-2 items-center">
+          <h4>contact: hello @ 9d8.dev</h4>
+          <ModeToggle />
+        </div>
       </div>
     </main>
   );
