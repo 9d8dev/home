@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="p-2 h-screen overflow-hidden grid md:text-lg bg-background grid-rows-[2rem,1fr,2rem] gap-2">
       {/* Header */}
-      <div className="flex text-focus-in gap-2 justify-between">
+      <div className="flex text-focus-in gap-2 backdrop-blur-md justify-between">
         <h1>9d8</h1>
         <h2>software design and development</h2>
       </div>
