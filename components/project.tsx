@@ -15,7 +15,7 @@ type ProjectProps = {
 
 const Project = ({ name, link, image, desc, year }: ProjectProps) => {
   return (
-    <div className="group h-fit w-fit shadow-sm">
+    <div className="group border rounded-lg h-fit w-fit shadow-sm">
       <Link
         className="block border rounded-lg relative overflow-hidden"
         href={link}

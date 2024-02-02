@@ -4,17 +4,54 @@ import { ModeToggle } from "@/components/craft/theme/theme-toggle";
 
 export default function Home() {
   return (
-    <main className="p-2 h-screen overflow-hidden grid md:text-lg bg-background grid-rows-[2rem,1fr,2rem] gap-2">
+    <main className="p-4 h-screen grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
       {/* Header */}
-      <div className="flex text-focus-in gap-2 backdrop-blur-md justify-between">
-        <h1>
-          <a href="https://github.com/9d8dev">9d8</a>
-        </h1>
-        <h2>software design and development</h2>
+      <div className="text-focus-in">
+        <div className="flex gap-2 justify-between bg-background">
+          <h1>
+            <a href="https://github.com/9d8dev">9d8</a>
+          </h1>
+          <h2>software design and development</h2>
+        </div>
+        <p className="mt-12 md:w-[480px]">
+          9d8 is a software design and development studio created by{" "}
+          <a
+            className="underline hover:opacity-60"
+            href="https://cameronyoungblood.com"
+          >
+            cameron youngblood
+          </a>{" "}
+          and{" "}
+          <a className="underline hover:opacity-60" href="https://bridger.to">
+            bridger tower
+          </a>
+        </p>
+
+        <div className="mt-12 flex gap-4">
+          <p>contact:</p>
+          <a
+            className="underline hover:opacity-60"
+            href="mailto:9d8dev@gmail.com"
+          >
+            email
+          </a>
+          <a
+            className="underline hover:opacity-60"
+            href="https://github.com/9d8dev"
+          >
+            github
+          </a>
+          <a
+            className="underline hover:opacity-60"
+            href="https://twitter.com/9d8dev"
+          >
+            x
+          </a>
+        </div>
       </div>
 
       {/* Content Grid */}
-      <div className="not-prose gap-2 overflow-auto grid sm:grid-cols-2 md:grid-cols-3">
+      <div className="not-prose gap-2 z-10 grid sm:grid-cols-2 md:grid-cols-3">
         {projects.map((project) => (
           <Project
             key={project.name}
@@ -28,10 +65,14 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="flex text-focus-in gap-2 justify-between items-center">
+      <div className="flex z-20 px-4 fixed bottom-0 bg-background right-0 left-0 text-sm text-focus-in gap-2 justify-between items-center">
         <h3>
-          © <a href="https://cameron.so">Cameron</a> and{" "}
-          <a href="https://bridger.to">Bridger</a> 1998 to present
+          ©{" "}
+          <span className="sr-only">
+            <a href="https://cameron.so">Cameron</a> and{" "}
+            <a href="https://bridger.to">Bridger</a>
+          </span>{" "}
+          1998 to present
         </h3>
         <div className="flex w-fit gap-2 items-center">
           <h4>contact: hello @ 9d8.dev</h4>
