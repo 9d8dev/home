@@ -1,0 +1,3 @@
+[submodule "components/craft"]
+	path = components/craft
+	url = https://github.com/9d8dev/craft

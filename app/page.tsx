@@ -1,107 +1,84 @@
-"use client";
-
-import Link from "next/link";
-import Header from "@/components/Header";
-import { motion } from "framer-motion";
-
-const projects = [
-  {
-    name: "alpine codex",
-    link: "https://www.alpinecodex.com/",
-    description: "Applied artificial intelligence.",
-  },
-  {
-    name: "ampry",
-    link: "https://www.ampry.com/",
-    description: "Software development for performance marketing.",
-  },
-  {
-    name: "flowhouse",
-    link: "https://www.flowhouse.io/",
-    description: "Productized design and development service.",
-  },
-  {
-    name: "zion design",
-    link: "https://www.zion.surf/",
-    description: "Design and branding for innovative brands.",
-  },
-  {
-    name: "router.so",
-    link: "https://www.router.so/",
-    description: "Light-weight leads router for performance marketers.",
-  },
-  {
-    name: "wavefinder",
-    link: "https://www.wavefinder.io/",
-    description: "Fully integrated AI-driven generative marketing platform.",
-  },
-  {
-    name: "builderkit",
-    link: "https://www.builderkit.io/",
-    description: "AI empowered SEO and website building toolkit.",
-  },
-  {
-    name: "outr.io",
-    link: "https://www.outr.io/",
-    description: "Launch your AI-powered sales team.",
-  },
-];
+import Project from "@/components/project";
+import projects from "@/projects.config";
+import { ModeToggle } from "@/components/craft/theme/theme-toggle";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <section className="flex flex-col container divide-y">
-        <div className="mt-6 py-4">
-          <div className="space-y-1">
-            <h1 className="text-xl font-bold uppercase">
-              Design and Development Studio
-            </h1>
-            <p className="text-slate-400">
-              Rooted in innovation and creativity.
-            </p>
-            <p className="text-slate-400">
-              Founded by{" "}
-              <a
-                className="underline underline-offset-4"
-                href="https://cameronyoungblood.com"
-              >
-                Cameron Youngblood
-              </a>{" "}
-              and{" "}
-              <a
-                className="underline underline-offset-4"
-                href="https://bridger.to"
-              >
-                Bridger Tower
-              </a>
-              .
-            </p>
-          </div>
+    <main className="p-4 h-screen grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
+      {/* Header */}
+      <div className="text-focus-in">
+        <div className="flex gap-2 justify-between bg-background">
+          <h1>
+            <a href="https://github.com/9d8dev">9d8</a>
+          </h1>
+          <h2>software design and development</h2>
         </div>
-        <div className="mt-6 py-4">
-          <div className="space-y-1">
-            <h2 className="font-bold uppercase">Projects</h2>
-            <p className="text-slate-400">Some of our work.</p>
-          </div>
-          <ul className="space-y-4 py-4">
-            {projects.map((project, index) => (
-              <li className="flex gap-2" key={index}>
-                {">"}{" "}
-                <Link
-                  href={project.link}
-                  className="flex flex-col space-y-1.5 hover:text-yellow-200"
-                >
-                  <span className="underline underline-offset-4">
-                    {project.name}
-                  </span>
-                  <span className="text-slate-400">{project.description}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <p className="mt-12 md:w-[480px]">
+          9d8 is a software design and development studio created by{" "}
+          <a
+            className="underline hover:opacity-60"
+            href="https://cameronyoungblood.com"
+          >
+            cameron youngblood
+          </a>{" "}
+          and{" "}
+          <a className="underline hover:opacity-60" href="https://bridger.to">
+            bridger tower
+          </a>
+        </p>
+
+        <div className="mt-12 flex gap-4">
+          <p>contact:</p>
+          <a
+            className="underline hover:opacity-60"
+            href="mailto:9d8dev@gmail.com"
+          >
+            email
+          </a>
+          <a
+            className="underline hover:opacity-60"
+            href="https://github.com/9d8dev"
+          >
+            github
+          </a>
+          <a
+            className="underline hover:opacity-60"
+            href="https://twitter.com/9d8dev"
+          >
+            x
+          </a>
         </div>
-      </section>
+      </div>
+
+      {/* Content Grid */}
+      <div className="not-prose gap-2 z-10 grid sm:grid-cols-2 md:grid-cols-3">
+        {projects.map((project) => (
+          <Project
+            key={project.name}
+            name={project.name}
+            link={project.link}
+            image={project.image}
+            desc={project.description}
+            year={project.year.toString()}
+          />
+        ))}
+      </div>
+
+      {/* Footer */}
+      <div className="flex z-20 px-4 fixed bottom-0 bg-background right-0 left-0 text-sm text-focus-in gap-2 justify-between items-center">
+        <h3>
+          ©{" "}
+          <span className="sr-only">
+            <a href="https://cameron.so">Cameron</a> and{" "}
+            <a href="https://bridger.to">Bridger</a>
+          </span>{" "}
+          1998 to present
+        </h3>
+        <div className="flex w-fit gap-2 items-center">
+          <h4>contact: hello @ 9d8.dev</h4>
+          <ModeToggle />
+        </div>
+      </div>
     </main>
   );
 }
