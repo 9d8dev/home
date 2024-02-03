@@ -70,7 +70,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="flex mt-12 md:mt-0 flex-col md:flex-row z-20 px-4 md:fixed bottom-0 bg-background right-0 left-0 text-sm text-focus-in gap-2 justify-between md:items-center">
+      <div className="flex py-4 md:py-0 flex-col md:flex-row z-20 px-4 md:fixed bottom-0 bg-background right-0 left-0 text-sm text-focus-in gap-2 justify-between md:items-center">
         <h3>
           ©{" "}
           <span className="sr-only">
@@ -79,7 +79,7 @@ export default function Home() {
           </span>{" "}
           1998 to present
         </h3>
-        <div className="flex w-fit gap-2 items-center">
+        <div className="hidden md:flex w-fit gap-2 items-center">
           <h4>contact: hello @ 9d8.dev</h4>
           <ModeToggle />
         </div>
