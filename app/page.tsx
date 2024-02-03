@@ -30,6 +30,7 @@ export default function Home() {
           <a className="underline hover:opacity-60" href="https://bridger.to">
             bridger tower
           </a>
+          .
         </p>
 
         <div className="mt-12 flex gap-4">
