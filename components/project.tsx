@@ -21,7 +21,7 @@ const Project = ({ name, link, image, desc, year }: ProjectProps) => {
         href={link}
       >
         <Image
-          className="w-full h-full object-cover group-hover:blur-sm group-hover:border object-center transition-all"
+          className="w-full h-full object-cover md:group-hover:blur-sm md:group-hover:border object-center transition-all"
           width={500}
           height={500}
           src={image}
@@ -30,7 +30,7 @@ const Project = ({ name, link, image, desc, year }: ProjectProps) => {
 
         <Badge
           variant="secondary"
-          className="hidden transition-all shadow-md group-hover:flex rounded-md absolute top-2 left-2"
+          className="hidden transition-all shadow-md md:group-hover:flex rounded-md absolute top-2 left-2"
         >
           <InfoIcon className="mr-2 w-3" />
           {desc}
@@ -38,7 +38,7 @@ const Project = ({ name, link, image, desc, year }: ProjectProps) => {
 
         <Badge
           variant="secondary"
-          className="hidden transition-all shadow-md group-hover:flex rounded-md absolute bottom-2 left-2"
+          className="md:hidden transition-all shadow-md md:group-hover:flex rounded-md absolute bottom-2 left-2"
         >
           {name} <ExternalLinkIcon className="ml-2 w-3" />
         </Badge>
