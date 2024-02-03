@@ -4,12 +4,17 @@ import { ModeToggle } from "@/components/craft/theme/theme-toggle";
 
 export default function Home() {
   return (
-    <main className="p-4 h-screen grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
+    <main className="p-4 max-w-7xl m-auto grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
       {/* Header */}
       <div className="text-focus-in">
         <div className="flex gap-2 justify-between bg-background">
           <h1>
-            <a href="https://github.com/9d8dev">9d8</a>
+            <a
+              className="dark:text-yellow-200"
+              href="https://github.com/9d8dev"
+            >
+              9d8
+            </a>
           </h1>
           <h2>software design and development</h2>
         </div>
