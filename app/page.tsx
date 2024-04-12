@@ -1,19 +1,27 @@
 import Project from "@/components/project";
 import projects from "@/projects.config";
 import { ModeToggle } from "@/components/craft/theme/theme-toggle";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="p-4 max-w-7xl m-auto grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
+    <main className="p-4 max-w-7xl text-focus-in m-auto grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
       {/* Header */}
-      <div className="text-focus-in">
-        <div className="flex gap-2 justify-between bg-background">
+      <div className="">
+        <div className="flex gap-2 items-center mt-4 justify-between bg-background">
           <h1>
             <a
               className="dark:text-yellow-200"
               href="https://github.com/9d8dev"
             >
-              9d8
+              <Image
+                src="/logo.svg"
+                alt="9d8 logo"
+                className="hover:opacity-75 transition-all"
+                width={56}
+                height={35.26}
+              />
+              <span className="sr-only">9d8</span>
             </a>
           </h1>
           <h2>software design and development</h2>
