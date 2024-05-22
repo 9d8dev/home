@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { GeistMono } from "geist/font/mono";
-import { GeistSans } from "font/sans";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { Layout } from "@/components/craft";
 import { Analytics } from "@vercel/analytics/react";
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Layout className={GeistMono.className}>
+    <Layout className={GeistSans.className}>
       <body>
         <ThemeProvider
           attribute="class"
@@ -54,7 +53,7 @@ const Nav = () => {
             <span className="sr-only">9d8</span>
           </a>
         </h1>
-        <h2>software design and development</h2>
+        <h2>design and development studio</h2>
       </div>
     </div>
   );
