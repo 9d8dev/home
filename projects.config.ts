@@ -1,119 +1,129 @@
+import wavefinder from "@/public/projects/wavefinder.jpeg";
+import alpine from "@/public/projects/alpine.jpeg";
+import ampry from "@/public/projects/ampry.jpeg";
+import autobyte from "@/public/projects/autobyte.jpeg";
+import builderkit from "@/public/projects/builderkit.jpeg";
+import craft from "@/public/projects/craft.jpeg";
+import fjord from "@/public/projects/fjord.jpeg";
+import lofi from "@/public/projects/lofi-anime.jpeg";
+import outr from "@/public/projects/outr.jpeg";
+import pandium from "@/public/projects/pandium.jpeg";
+import presets from "@/public/projects/presets.jpeg";
+import bridger from "@/public/projects/bridger.jpeg";
+import cameron from "@/public/projects/cameron.jpeg";
+import socal from "@/public/projects/socal-flights.jpeg";
+import zion from "@/public/projects/zion.jpeg";
+import windpress from "@/public/projects/windpress.jpeg";
+
 const projects = [
   {
     name: "WaveFinder",
-    image: "/projects/wavefinder.jpeg",
+    image: wavefinder,
     description: "message testing using AI and ML",
     link: "https://wavefinder.io",
     year: 2023,
   },
   {
     name: "Alpine Codex",
-    image: "/projects/alpine.jpeg",
+    image: alpine,
     description: "intelligent marketing software",
     link: "https://alpine.dev",
     year: 2023,
   },
   {
     name: "Ampry",
-    image: "/projects/ampry.jpeg",
+    image: ampry,
     description: "marketing and lead generation",
     link: "https://ampry.com",
     year: 2018,
   },
   {
     name: "autobyte",
-    image: "/projects/autobyte.jpeg",
+    image: autobyte,
     description: "development-as-a-service platform",
     link: "https://autobyte.dev",
     year: 2023,
   },
   {
     name: "BuilderKit",
-    image: "/projects/builderkit.jpeg",
+    image: builderkit,
     description: "AI copywriting and content generation assistant",
     link: "https://builderkit.io",
     year: 2023,
   },
   {
-    name: "Craft UI",
-    image: "/projects/craft.jpeg",
+    name: "Craft",
+    image: craft,
     description: "design system and component library",
-    link: "https://craftui.org",
-    year: 2023,
-  },
-  {
-    name: "Family History AI",
-    image: "/projects/family-history-ai.jpeg",
-    description: "enhance and colorize images with AI",
-    link: "https://familyhistoryai.com",
+    link: "https://github.com/brijr/craft",
     year: 2023,
   },
   {
     name: "Fjord",
-    image: "/projects/fjord.jpeg",
+    image: fjord,
     description: "headless next js wordpress starter kit",
     link: "https://fjord.dev",
     year: 2024,
   },
   {
     name: "Lofi Anime",
-    image: "/projects/lofi-anime.jpeg",
+    image: lofi,
     description: "generate images in the style of hiroshi nagai",
     link: "https://lofianime.com",
     year: 2023,
   },
   {
     name: "Outr.io",
-    image: "/projects/outr.jpeg",
+    image: outr,
     description: "your AI sales outreach assistant",
     link: "https://outr.io",
     year: 2023,
   },
   {
     name: "Pandium",
-    image: "/projects/pandium.jpeg",
+    image: pandium,
     description: "website and product design for pandium.com",
     link: "https://pandium.com",
     year: 2023,
   },
   {
     name: "Presets",
-    image: "/projects/presets.jpeg",
+    image: presets,
     description: "AI powered photo editing software",
     link: "https://presets.com",
     year: 2024,
   },
   {
     name: "Socal Flights",
-    image: "/projects/socal-flights.jpeg",
+    image: socal,
     description: "find best deals on flights from LAX",
     link: "https://socal.flights",
     year: 2021,
   },
   {
     name: "WindPress",
-    image: "/projects/windpress.jpeg",
+    image: windpress,
     description: "tailwind and wordpress starter theme",
     link: "https://windpress.wpenginepowered.com",
     year: 2023,
   },
   {
     name: "Zion",
-    image: "/projects/zion.jpeg",
+    image: zion,
     description: "design studio and creative agency",
     link: "https://zion.surf",
     year: 2018,
   },
   {
     name: "bridger.to",
-    image: "/projects/bridger.jpeg",
+    image: bridger,
     description: "homepage of bridger tower",
     link: "https://bridger.to",
     year: 1998,
   },
   {
     name: "cameron.so",
-    image: "/projects/cameron.jpeg",
+    image: cameron,
     description: "homepage of cameron youngblood",
     link: "https://cameronyoungblood.com",
     year: 1998,

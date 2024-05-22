@@ -26,7 +26,7 @@ const Project = ({ name, link, image, desc, year }: ProjectProps) => {
           height={500}
           src={image}
           alt={name}
-          // placeholder="blur"
+          placeholder="blur"
         ></Image>
 
         <Badge
