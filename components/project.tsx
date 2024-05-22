@@ -1,14 +1,14 @@
 import { Badge } from "./ui/badge";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import { ExternalLinkIcon, InfoIcon } from "lucide-react";
 
 type ProjectProps = {
   name: string;
   link: string;
-  image: string;
+  image: StaticImageData;
   desc: string;
   year: string;
 };
