@@ -1,42 +1,94 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="p-4 max-w-7xl m-auto grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
-      <p className="mt-12 md:w-[480px]">
-        9d8 is a software design and development studio created by{" "}
+    <main className="p-6 grid gap-6 md:gap-12 my-12">
+      <Intro />
+      <Links />
+    </main>
+  );
+}
+
+const Intro = () => {
+  return (
+    <div className="md:max-w-2xl grid gap-4">
+      <p>
+        9d8 is a marketing-minded software design and development studio created
+        by{" "}
         <a
-          className="underline hover:opacity-60"
+          className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
           href="https://cameronyoungblood.com"
         >
           cameron youngblood
         </a>{" "}
         and{" "}
-        <a className="underline hover:opacity-60" href="https://bridger.to">
+        <a
+          className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+          href="https://bridger.to"
+        >
           bridger tower
+        </a>
+        . We partner with innovative companies accross the United States to
+        fulfill design, code, and marketing needs. Please contact us if you are
+        interested in working with us.
+      </p>
+      <p>
+        We also develop open source software with a focus on marketing and
+        website creation. Projects include{" "}
+        <a
+          className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+          href="https://fjord.dev"
+        >
+          Fjord
+        </a>
+        ,{" "}
+        <a
+          className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+          href="https://github.com/brijr/craft"
+        >
+          Craft
+        </a>
+        ,{" "}
+        <a
+          className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+          href="https://components.bridger.to"
+        >
+          Components
+        </a>
+        , and{" "}
+        <a
+          className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+          href="https://router.so"
+        >
+          Router.so
         </a>
         .
       </p>
-
-      <div className="mt-12 flex gap-4">
-        <p>contact:</p>
-        <a
-          className="underline hover:opacity-60"
-          href="mailto:9d8dev@gmail.com"
-        >
-          email
-        </a>
-        <a
-          className="underline hover:opacity-60"
-          href="https://github.com/9d8dev"
-        >
-          github
-        </a>
-        <a
-          className="underline hover:opacity-60"
-          href="https://twitter.com/9d8dev"
-        >
-          x
-        </a>
-      </div>
-    </main>
+    </div>
   );
-}
+};
+
+const Links = () => {
+  return (
+    <div className="flex gap-4">
+      <Link
+        className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+        href="/work"
+      >
+        / work
+      </Link>
+      <a
+        className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+        href="https://github.com/9d8dev"
+      >
+        / github
+      </a>
+      <a
+        className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+        href="https://twitter.com/9d8dev"
+      >
+        / x
+      </a>
+    </div>
+  );
+};
