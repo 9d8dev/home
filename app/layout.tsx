@@ -62,7 +62,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <div className="flex fixed bottom-0 py-4 md:py-0 flex-col md:flex-row z-20 px-4 right-0 left-0 text-sm gap-2 justify-between md:items-center">
+    <div className="flex fixed bottom-0 py-4 md:py-0 flex-col md:flex-row z-20 px-6 right-0 left-0 text-sm gap-2 justify-between md:items-center">
       <h3>
         ©{" "}
         <span className="sr-only">
