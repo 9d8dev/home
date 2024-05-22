@@ -40,8 +40,8 @@ export default function RootLayout({
 
 const Nav = () => {
   return (
-    <div className="px-6 py-4 sticky top-0 right-0 left-0 bg-background">
-      <div className="flex gap-2 items-center mt-4 justify-between">
+    <div className="px-6 py-4 sticky top-0 right-0 left-0">
+      <div className="flex gap-2 mt-4 justify-between">
         <h1>
           <Link className="dark:text-yellow-200" href="/">
             <Image
@@ -54,7 +54,7 @@ const Nav = () => {
             <span className="sr-only">9d8</span>
           </Link>
         </h1>
-        <h2>design and software studio</h2>
+        <h2>:: design and software studio</h2>
       </div>
     </div>
   );
@@ -62,7 +62,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <div className="flex py-4 md:py-0 flex-col md:flex-row z-20 px-4 bg-background right-0 left-0 text-sm gap-2 justify-between md:items-center">
+    <div className="flex fixed bottom-0 py-4 md:py-0 flex-col md:flex-row z-20 px-4 right-0 left-0 text-sm gap-2 justify-between md:items-center">
       <h3>
         ©{" "}
         <span className="sr-only">
