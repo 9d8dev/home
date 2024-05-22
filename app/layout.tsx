@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-import { Layout } from "@/components/craft/layout";
+import { Layout } from "@/components/craft";
 import { Analytics } from "@vercel/analytics/react";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "9d8 :: software design and development",
@@ -16,8 +17,17 @@ export default function RootLayout({
 }) {
   return (
     <Layout className={GeistMono.className}>
-      {children}
-      <Analytics />
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Analytics />
+        </ThemeProvider>
+      </body>
     </Layout>
   );
 }
