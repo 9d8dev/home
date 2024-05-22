@@ -29,8 +29,14 @@ const Intro = () => {
           bridger tower
         </a>
         . We partner with innovative companies accross the United States to
-        fulfill design, code, and marketing needs. Please contact us if you are
-        interested in working with us.
+        fulfill design, code, and marketing needs. Please{" "}
+        <a
+          className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+          href="mailto:bridger@9d8.dev,cameron@9d8.dev"
+        >
+          contact us
+        </a>{" "}
+        if you are interested in working with us.
       </p>
       <p>
         We also develop open source software with a focus on marketing and
