@@ -7,6 +7,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "9d8 :: software design and development",
@@ -42,7 +43,7 @@ const Nav = () => {
     <div className="px-6 py-4 sticky top-0 right-0 left-0 bg-background">
       <div className="flex gap-2 items-center mt-4 justify-between">
         <h1>
-          <a className="dark:text-yellow-200" href="https://github.com/9d8dev">
+          <Link className="dark:text-yellow-200" href="/">
             <Image
               src="/logo.svg"
               alt="9d8 logo"
@@ -51,9 +52,9 @@ const Nav = () => {
               height={35.26}
             />
             <span className="sr-only">9d8</span>
-          </a>
+          </Link>
         </h1>
-        <h2>design and development studio</h2>
+        <h2>design and software studio</h2>
       </div>
     </div>
   );
@@ -61,7 +62,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <div className="flex py-4 md:py-0 flex-col md:flex-row z-20 px-4 md:fixed bottom-0 bg-background right-0 left-0 text-sm text-focus-in gap-2 justify-between md:items-center">
+    <div className="flex py-4 md:py-0 flex-col md:flex-row z-20 px-4 bg-background right-0 left-0 text-sm gap-2 justify-between md:items-center">
       <h3>
         ©{" "}
         <span className="sr-only">

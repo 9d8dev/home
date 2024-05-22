@@ -1,10 +1,6 @@
-import Project from "@/components/project";
-import projects from "@/projects.config";
-import { ModeToggle } from "@/components/mode-toggle";
-
 export default function Home() {
   return (
-    <main className="p-4 max-w-7xl text-focus-in m-auto grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
+    <main className="p-4 max-w-7xl m-auto grid md:text-lg bg-background grid-rows-[16rem,1fr,2rem] gap-2">
       <p className="mt-12 md:w-[480px]">
         9d8 is a software design and development studio created by{" "}
         <a
