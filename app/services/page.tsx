@@ -46,8 +46,8 @@ const Hero = () => {
   return (
     <div className="md:max-w-2xl grid gap-4">
       <h1 className="text-4xl font-medium sr-only">9d8 Services</h1>
-      <h2 className="text-4xl">Subscription Services offered by 9d8.</h2>
-      <h3 className="text-muted-foreground">
+      <h2 className="text-2xl">Subscription Services offered by 9d8</h2>
+      <h3>
         We offer a variety of subscription services to help you grow your
         business. We work across artificial intelligence, marketing, design, and
         development.
@@ -59,7 +59,7 @@ const Hero = () => {
 const Pricing = () => {
   return (
     <div className="md:max-w-2xl grid gap-4">
-      <h3 className="text-2xl">
+      <h3 className="text-xl">
         <Balancer>
           Subscriptions to build your business. Pause or cancel anytime.
         </Balancer>
@@ -71,9 +71,9 @@ const Pricing = () => {
             key={index}
             className="bg-muted-background p-6 grid gap-4 rounded-lg border bg-accent/25"
           >
-            <h4 className="text-2xl">{service.name}</h4>
+            <h4>{service.name}</h4>
             <p className="text-muted-foreground">{service.description}</p>
-            <p className="text-2xl">
+            <p>
               <span className="text-muted-foreground text-lg">Starting at</span>{" "}
               {service.price}
             </p>
