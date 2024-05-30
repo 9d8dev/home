@@ -84,18 +84,17 @@ const Intro = () => {
 const Links = () => {
   return (
     <div className="flex gap-4">
-      {" "}
-      <Link
-        className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
-        href="/work"
-      >
-        / work with us
-      </Link>
       <Link
         className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
         href="/work"
       >
         / work
+      </Link>{" "}
+      <Link
+        className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
+        href="/services"
+      >
+        / services
       </Link>
       <a
         className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
