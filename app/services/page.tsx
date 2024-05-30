@@ -11,6 +11,27 @@ const companies = [
   { name: "Alpine Codex", link: "https://alpinecodex.com" },
 ];
 
+const services = [
+  {
+    name: "Software Development",
+    description:
+      "Full-cycle Product Design, Prototyping & Wireframing, Custom Software Development, Quality Assurance & Testing",
+    price: "$7,000/month",
+  },
+  {
+    name: "Web Development",
+    description:
+      "Responsive Web Design, Frontend & Backend Development, E-commerce Solutions, Website Maintenance & Support",
+    price: "$6,000/month",
+  },
+  {
+    name: "Marketing Development",
+    description:
+      "Marketing Automation, SEO & SEM Services, Email Campaign Management, Data Analytics & Reporting",
+    price: "$5,500/month",
+  },
+];
+
 export default function Home() {
   return (
     <main className="p-6 grid gap-6 md:gap-12 my-12">
@@ -43,51 +64,22 @@ const Pricing = () => {
           Subscriptions to build your business. Pause or cancel anytime.
         </Balancer>
       </h3>
-      <section>
-        <h2>Product</h2>
-        <hr />
 
-        <h3>Product Design & Software Development</h3>
-        <p>
-          <strong>Product Development</strong> - $7,000/month
-        </p>
-        <ul>
-          <li>Full-cycle Product Design</li>
-          <li>Prototyping & Wireframing</li>
-          <li>Custom Software Development</li>
-          <li>Quality Assurance & Testing</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Web</h2>
-        <hr />
-
-        <h3>Web Design & Development</h3>
-        <p>
-          <strong>Web Development</strong> - $6,000/month
-        </p>
-        <ul>
-          <li>Responsive Web Design</li>
-          <li>Frontend & Backend Development</li>
-          <li>E-commerce Solutions</li>
-          <li>Website Maintenance & Support</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Marketing</h2>
-        <hr />
-
-        <h3>Marketing Automation & Technical Marketing</h3>
-        <p>
-          <strong>Marketing Development</strong> - $5,500/month
-        </p>
-        <ul>
-          <li>Marketing Automation</li>
-          <li>SEO & SEM Services</li>
-          <li>Email Campaign Management</li>
-          <li>Data Analytics & Reporting</li>
-        </ul>
-      </section>
+      <ul className="grid gap-4">
+        {services.map((service, index) => (
+          <li
+            key={index}
+            className="bg-muted-background p-6 grid gap-4 rounded-lg border bg-accent/25"
+          >
+            <h4 className="text-2xl">{service.name}</h4>
+            <p className="text-muted-foreground">{service.description}</p>
+            <p className="text-2xl">
+              <span className="text-muted-foreground text-lg">Starting at</span>{" "}
+              {service.price}
+            </p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
