@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://9d8.dev"),
   title: "9d8 :: software design and development",
   description: "designing and developing software for the web.",
 };
