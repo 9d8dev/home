@@ -28,7 +28,7 @@ const Intro = () => {
         >
           Bridger Tower
         </a>
-        . We partner with innovative companies accross the United States to
+        . We partner with innovative companies across the United States to
         fulfill design, code, and marketing needs. Please{" "}
         <a
           className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
