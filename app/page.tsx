@@ -34,8 +34,9 @@ const Intro = () => {
           className="underline decoration-yellow-100/30 hover:decoration-yellow-200 underline-offset-4 transition-all"
           href="mailto:bridger@9d8.dev,cameron@9d8.dev"
         >
-          contact us
+          email us
         </a>{" "}
+        or <a href="https://cal.com/9d8dev">book a meeting with us</a>
         if you are interested in working with us.
       </p>
       <p>
