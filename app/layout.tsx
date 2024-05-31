@@ -48,7 +48,7 @@ const Nav = () => {
             <Image
               src="/logo.svg"
               alt="9d8 logo"
-              className="invert transition-all hover:opacity-75 dark:invert-0"
+              className="invert transition-all hover:scale-105 hover:opacity-75 dark:invert-0"
               width={56}
               height={35.26}
             />

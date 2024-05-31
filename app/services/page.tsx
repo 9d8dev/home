@@ -53,15 +53,26 @@ const Hero = () => {
     <div className="grid gap-4 md:max-w-2xl">
       <h1 className="sr-only text-4xl font-medium">9d8 Services</h1>
       <h2 className="text-2xl">Subscription Services offered by 9d8</h2>
-      <p>
+      <p className="text-muted-foreground">
         At 9d8, we are enthusiastic about collaborating with new brands to
         empower them through innovative technology solutions.
       </p>
-      <h3>
+      <h3 className="text-muted-foreground">
         We offer a variety of monthly partnership subscription services to help
         you grow your business. We work across artificial intelligence,
         marketing, design, and development.
       </h3>
+      <p>
+        Intrested? Please{" "}
+        <StyledLink href="mailto:bridger@9d8.dev,cameron@9d8.dev">
+          email us
+        </StyledLink>{" "}
+        or{" "}
+        <StyledLink href="https://cal.com/9d8dev">
+          book a meeting with us
+        </StyledLink>
+        .
+      </p>
     </div>
   );
 };
@@ -103,6 +114,9 @@ const Testimonials = () => {
           </li>
         ))}
       </ul>
+      <p className="text-muted-foreground">
+        See more of our <StyledLink href="/work">work here</StyledLink>.
+      </p>
     </div>
   );
 };
