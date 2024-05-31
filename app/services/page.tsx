@@ -22,6 +22,12 @@ const services = [
     price: "$7,000/month",
   },
   {
+    name: "AI Integration & Development",
+    description:
+      "AI Workflow Automation, AI Chatbots & Virtual Assistants, AI Consulting & Strategy, AI Software Development",
+    price: "$7,000/month",
+  },
+  {
     name: "Web Development",
     description:
       "Responsive Web Design, Frontend & Backend Development, E-commerce Solutions, Website Maintenance & Support",
@@ -32,12 +38,6 @@ const services = [
     description:
       "Marketing Automation, SEO & SEM Services, Email Campaign Management, Data Analytics & Reporting",
     price: "$6,000/month",
-  },
-  {
-    name: "AI Integration & Development",
-    description:
-      "AI Workflow Automation, AI Chatbots & Virtual Assistants, AI Consulting & Strategy, AI Software Development",
-    price: "$7,000/month",
   },
 ];
 
