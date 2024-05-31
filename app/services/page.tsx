@@ -4,10 +4,13 @@ const companies = [
   { name: "Vivint", link: "https://www.vivint.com" },
   { name: "Tackle.io", link: "https://www.tackle.io" },
   { name: "Ampry", link: "https://www.ampry.com" },
+  { name: "Pandium", link: "https://www.pandium.com" },
   { name: "Wavefinder", link: "https://www.wavefinder.io" },
   { name: "Trajector", link: "https://www.trajector.com" },
   { name: "General Motors", link: "https://www.gm.com" },
+  { name: "Route", link: "https://www.route.com" },
   { name: "Hewlett Packer", link: "https://www.hp.com" },
+  { name: "Rem Blair", link: "https://www.remblair.com" },
   { name: "Alpine Codex", link: "https://alpinecodex.com" },
 ];
 
@@ -28,7 +31,13 @@ const services = [
     name: "Marketing Development",
     description:
       "Marketing Automation, SEO & SEM Services, Email Campaign Management, Data Analytics & Reporting",
-    price: "$5,500/month",
+    price: "$6,000/month",
+  },
+  {
+    name: "AI Integration & Development",
+    description:
+      "AI Workflow Automation, AI Chatbots & Virtual Assistants, AI Consulting & Strategy, AI Software Development",
+    price: "$7,000/month",
   },
 ];
 
