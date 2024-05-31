@@ -19,25 +19,21 @@ const services = [
     name: "Software Development",
     description:
       "Full-cycle Product Design, Prototyping & Wireframing, Custom Software Development, Quality Assurance & Testing",
-    price: "$7,000/month",
   },
   {
     name: "AI Integration & Development",
     description:
       "AI Workflow Automation, AI Chatbots & Virtual Assistants, AI Consulting & Strategy, AI Software Development",
-    price: "$7,000/month",
   },
   {
     name: "Web Development",
     description:
       "Responsive Web Design, Frontend & Backend Development, E-commerce Solutions, Website Maintenance & Support",
-    price: "$6,000/month",
   },
   {
     name: "Marketing Development",
     description:
       "Marketing Automation, SEO & SEM Services, Email Campaign Management, Data Analytics & Reporting",
-    price: "$6,000/month",
   },
 ];
 
@@ -82,10 +78,6 @@ const Pricing = () => {
           >
             <h4>{service.name}</h4>
             <p className="text-muted-foreground">{service.description}</p>
-            <p>
-              <span className="text-muted-foreground">Starting at</span>{" "}
-              {service.price}
-            </p>
           </li>
         ))}
       </ul>
@@ -96,15 +88,15 @@ const Pricing = () => {
 const Testimonials = () => {
   return (
     <div className="grid gap-4 md:max-w-2xl">
-      <h3 className="mb-6">We&apos;ve worked with some amazing companies. </h3>
-      <ul className="flex-wrap gap-2 md:flex">
+      <h3 className="text-xl">We&apos;ve worked with some amazing companies. </h3>
+      <ul className="flex-wrap gap-1 md:flex">
         {companies.map((company, index) => (
           <li className="" key={index}>
             <a
               className="transition-all hover:text-muted-foreground"
               href={company.link}
             >
-              {company.name} +{" "}
+              {company.name} +
             </a>
           </li>
         ))}
