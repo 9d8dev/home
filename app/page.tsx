@@ -2,10 +2,10 @@ import { StyledLink } from "@/components/styled-link";
 
 export default function Home() {
   return (
-    <main className="my-12 grid gap-6 p-6 fade-in md:gap-12">
+    <>
       <Intro />
       <Links />
-    </main>
+    </>
   );
 }
 

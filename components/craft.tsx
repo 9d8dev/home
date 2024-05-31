@@ -40,20 +40,20 @@ const Main = ({ children, className, id }: MainProps) => {
         // `Main` Specific Styles
         "max-w-none prose-p:m-0",
         // General Prose
-        "prose prose-neutral prose:font-sans dark:prose-invert xl:prose-lg",
+        "prose:font-sans prose prose-neutral dark:prose-invert xl:prose-lg",
         // Prose Headings
         "prose-headings:font-normal",
         // Prose Strong
         "prose-strong:font-semibold",
         // Inline Links
-        "prose-a:underline prose-a:decoration-primary/50 prose-a:underline-offset-2 prose-a:text-foreground/75 prose-a:transition-all",
+        "prose-a:text-foreground/75 prose-a:underline prose-a:decoration-primary/50 prose-a:underline-offset-2 prose-a:transition-all",
         // Inline Link Hover
-        "hover:prose-a:decoration-primary hover:prose-a:text-foreground",
+        "hover:prose-a:text-foreground hover:prose-a:decoration-primary",
         // Blockquotes
         "prose-blockquote:not-italic",
         // Pre and Code Blocks
         "prose-pre:border prose-pre:bg-muted/25 prose-pre:text-foreground",
-        className
+        className,
       )}
       id={id}
     >
@@ -94,17 +94,24 @@ const Container = ({ children, className, id }: ContainerProps) => {
 
 // Article Component
 type ArticleProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   id?: string;
+  dangerouslySetInnerHTML?: { __html: string };
 };
 
-const Article = ({ children, className, id }: ArticleProps) => {
+const Article = ({
+  children,
+  className,
+  id,
+  dangerouslySetInnerHTML,
+}: ArticleProps) => {
   return (
     <article
+      dangerouslySetInnerHTML={dangerouslySetInnerHTML}
       className={cn(
         // General Prose
-        "prose prose-neutral prose:font-sans dark:prose-invert xl:prose-lg max-w-none",
+        "prose:font-sans prose prose-neutral dark:prose-invert xl:prose-lg",
         // Prose Headings
         "prose-headings:font-normal",
         // Prose Paragraphs
@@ -112,14 +119,14 @@ const Article = ({ children, className, id }: ArticleProps) => {
         // Prose Strong
         "prose-strong:font-semibold",
         // Inline Links
-        "prose-a:underline prose-a:decoration-primary/50 prose-a:underline-offset-2 prose-a:text-foreground/75 prose-a:transition-all",
+        "prose-a:text-foreground/75 prose-a:underline prose-a:decoration-primary/50 prose-a:underline-offset-2 prose-a:transition-all",
         // Inline Link Hover
-        "hover:prose-a:decoration-primary hover:prose-a:text-foreground",
+        "hover:prose-a:text-foreground hover:prose-a:decoration-primary",
         // Blockquotes
         "prose-blockquote:not-italic",
         // Pre and Code Blocks
         "prose-pre:border prose-pre:bg-muted/25",
-        className
+        className,
       )}
       id={id}
     >

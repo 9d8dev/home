@@ -15,14 +15,14 @@ type ProjectProps = {
 
 const Project = ({ name, link, image, desc, year }: ProjectProps) => {
   return (
-    <div className="group border rounded-lg h-fit w-fit shadow-sm">
+    <div className="group h-fit w-fit rounded-lg border shadow-sm">
       <Link
-        className="block border rounded-lg relative overflow-hidden"
+        className="relative block overflow-hidden rounded-lg border"
         href={link}
       >
         <Image
-          className="w-full h-full object-cover md:group-hover:blur-sm md:group-hover:border object-center transition-all"
-          width={500}
+          className="h-full w-full object-cover object-center transition-all md:group-hover:border md:group-hover:blur-sm"
+          width={720}
           height={500}
           src={image}
           alt={name}
@@ -31,7 +31,7 @@ const Project = ({ name, link, image, desc, year }: ProjectProps) => {
 
         <Badge
           variant="secondary"
-          className="hidden transition-all shadow-md md:group-hover:flex rounded-md absolute top-2 left-2"
+          className="absolute left-2 top-2 hidden rounded-md shadow-md transition-all md:group-hover:flex"
         >
           <InfoIcon className="mr-2 w-3" />
           {desc}
@@ -39,7 +39,7 @@ const Project = ({ name, link, image, desc, year }: ProjectProps) => {
 
         <Badge
           variant="secondary"
-          className="md:hidden transition-all shadow-md md:group-hover:flex rounded-md absolute bottom-2 left-2"
+          className="absolute bottom-2 left-2 rounded-md shadow-md transition-all md:hidden md:group-hover:flex"
         >
           {name} <ExternalLinkIcon className="ml-2 w-3" />
         </Badge>

@@ -40,11 +40,11 @@ const services = [
 
 export default function Home() {
   return (
-    <main className="my-12 grid gap-6 p-6 fade-in md:gap-12">
+    <>
       <Hero />
       <Pricing />
       <Testimonials />
-    </main>
+    </>
   );
 }
 

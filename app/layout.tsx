@@ -30,7 +30,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Nav />
-          <div className="wait-fade-in">{children}</div>
+          <main className="mb-12 grid gap-6 p-6 fade-in md:gap-12">
+            {children}
+          </main>
           <Footer />
           <Analytics />
         </ThemeProvider>
@@ -41,7 +43,7 @@ export default function RootLayout({
 
 const Nav = () => {
   return (
-    <div className="sticky left-0 right-0 top-0 px-6 py-4 fade-in">
+    <div className="sticky left-0 right-0 top-0 z-50 px-6 py-4 fade-in">
       <div className="mt-4 flex justify-between gap-2">
         <h1>
           <Link className="dark:text-yellow-200" href="/">
