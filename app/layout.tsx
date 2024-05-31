@@ -30,7 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Nav />
-          {children}
+          <div className="wait-fade-in">{children}</div>
           <Footer />
           <Analytics />
         </ThemeProvider>
@@ -41,14 +41,14 @@ export default function RootLayout({
 
 const Nav = () => {
   return (
-    <div className="px-6 py-4 sticky top-0 right-0 left-0">
-      <div className="flex gap-2 mt-4 justify-between">
+    <div className="sticky left-0 right-0 top-0 px-6 py-4 fade-in">
+      <div className="mt-4 flex justify-between gap-2">
         <h1>
           <Link className="dark:text-yellow-200" href="/">
             <Image
               src="/logo.svg"
               alt="9d8 logo"
-              className="hover:opacity-75 transition-all invert dark:invert-0"
+              className="invert transition-all hover:opacity-75 dark:invert-0"
               width={56}
               height={35.26}
             />
@@ -63,7 +63,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <div className="flex fixed bottom-0 py-4 md:py-0 flex-col md:flex-row z-20 px-6 right-0 left-0 text-sm gap-2 justify-between md:items-center">
+    <div className="fixed bottom-0 left-0 right-0 z-20 flex flex-col justify-between gap-2 px-6 py-4 text-sm fade-in md:flex-row md:items-center md:py-0">
       <h3>
         ©{" "}
         <span className="sr-only">
@@ -72,7 +72,7 @@ const Footer = () => {
         </span>{" "}
         1998 to present
       </h3>
-      <div className="hidden md:flex w-fit gap-2 items-center">
+      <div className="hidden w-fit items-center gap-2 md:flex">
         <h4>contact: hello @ 9d8.dev</h4>
         <ModeToggle />
       </div>
