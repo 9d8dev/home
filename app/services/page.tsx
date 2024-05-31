@@ -43,7 +43,7 @@ const services = [
 
 export default function Home() {
   return (
-    <main className="p-6 grid gap-6 md:gap-12 my-12">
+    <main className="my-12 grid gap-6 p-6 md:gap-12">
       <Hero />
       <Pricing />
       <Testimonials />
@@ -53,8 +53,8 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <div className="md:max-w-2xl grid gap-4">
-      <h1 className="text-4xl font-medium sr-only">9d8 Services</h1>
+    <div className="grid gap-4 md:max-w-2xl">
+      <h1 className="sr-only text-4xl font-medium">9d8 Services</h1>
       <h2 className="text-2xl">Subscription Services offered by 9d8</h2>
       <h3>
         We offer a variety of subscription services to help you grow your
@@ -67,7 +67,7 @@ const Hero = () => {
 
 const Pricing = () => {
   return (
-    <div className="md:max-w-2xl grid gap-4">
+    <div className="grid gap-4 md:max-w-2xl">
       <h3 className="text-xl">
         <Balancer>
           Subscriptions to build your business. Pause or cancel anytime.
@@ -78,12 +78,12 @@ const Pricing = () => {
         {services.map((service, index) => (
           <li
             key={index}
-            className="bg-muted-background p-6 grid gap-4 rounded-lg border bg-accent/25"
+            className="bg-muted-background grid gap-4 rounded-lg border bg-accent/25 p-6"
           >
             <h4>{service.name}</h4>
             <p className="text-muted-foreground">{service.description}</p>
             <p>
-              <span className="text-muted-foreground text-lg">Starting at</span>{" "}
+              <span className="text-muted-foreground">Starting at</span>{" "}
               {service.price}
             </p>
           </li>
@@ -95,15 +95,13 @@ const Pricing = () => {
 
 const Testimonials = () => {
   return (
-    <div className="md:max-w-2xl grid gap-4">
-      <h3 className="text-2xl mb-6">
-        We&apos;ve worked with some amazing companies.{" "}
-      </h3>
-      <ul className="md:flex gap-2 flex-wrap">
+    <div className="grid gap-4 md:max-w-2xl">
+      <h3 className="mb-6">We&apos;ve worked with some amazing companies. </h3>
+      <ul className="flex-wrap gap-2 md:flex">
         {companies.map((company, index) => (
-          <li className="text-2xl" key={index}>
+          <li className="" key={index}>
             <a
-              className="hover:text-muted-foreground transition-all"
+              className="transition-all hover:text-muted-foreground"
               href={company.link}
             >
               {company.name} +{" "}
