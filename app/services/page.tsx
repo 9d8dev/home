@@ -1,4 +1,5 @@
 import Balancer from "react-wrap-balancer";
+import { StyledLink } from "@/components/styled-link";
 
 const companies = [
   { name: "Vivint", link: "https://www.vivint.com" },
@@ -9,7 +10,7 @@ const companies = [
   { name: "Trajector", link: "https://www.trajector.com" },
   { name: "General Motors", link: "https://www.gm.com" },
   { name: "Route", link: "https://www.route.com" },
-  { name: "Hewlett Packer", link: "https://www.hp.com" },
+  { name: "Hewlett Packard", link: "https://www.hp.com" },
   { name: "Rem Blair", link: "https://www.remblair.com" },
   { name: "Alpine Codex", link: "https://alpinecodex.com" },
 ];
@@ -18,22 +19,22 @@ const services = [
   {
     name: "Software Development",
     description:
-      "Full-cycle Product Design, Prototyping & Wireframing, Custom Software Development, Quality Assurance & Testing",
+      "From full-cycle product design to custom software development, we offer comprehensive solutions including prototyping, wireframing, and rigorous quality assurance to ensure your software meets the highest standards.",
   },
   {
     name: "AI Integration & Development",
     description:
-      "AI Workflow Automation, AI Chatbots & Virtual Assistants, AI Consulting & Strategy, AI Software Development",
+      "Leverage the power of AI with our services in workflow automation, chatbot and virtual assistant creation, strategic AI consulting, and bespoke AI software development to transform your business processes.",
   },
   {
     name: "Web Development",
     description:
-      "Responsive Web Design, Frontend & Backend Development, E-commerce Solutions, Website Maintenance & Support",
+      "Our web development services encompass responsive design, robust frontend and backend development, tailored e-commerce solutions, and ongoing website maintenance and support to keep your digital presence strong and effective.",
   },
   {
     name: "Marketing Development",
     description:
-      "Marketing Automation, SEO & SEM Services, Email Campaign Management, Data Analytics & Reporting",
+      "Enhance your marketing efforts with our expertise in automation, SEO and SEM services, email campaign management, and data analytics and reporting to drive growth and improve ROI.",
   },
 ];
 
@@ -52,10 +53,14 @@ const Hero = () => {
     <div className="grid gap-4 md:max-w-2xl">
       <h1 className="sr-only text-4xl font-medium">9d8 Services</h1>
       <h2 className="text-2xl">Subscription Services offered by 9d8</h2>
+      <p>
+        At 9d8, we are enthusiastic about collaborating with new brands to
+        empower them through innovative technology solutions.
+      </p>
       <h3>
-        We offer a variety of subscription services to help you grow your
-        business. We work across artificial intelligence, marketing, design, and
-        development.
+        We offer a variety of monthly partnership subscription services to help
+        you grow your business. We work across artificial intelligence,
+        marketing, design, and development.
       </h3>
     </div>
   );
@@ -88,16 +93,13 @@ const Pricing = () => {
 const Testimonials = () => {
   return (
     <div className="grid gap-4 md:max-w-2xl">
-      <h3 className="text-xl">We&apos;ve worked with some amazing companies. </h3>
+      <h3 className="text-xl">
+        We&apos;ve worked with some amazing companies.{" "}
+      </h3>
       <ul className="flex-wrap gap-1 md:flex">
         {companies.map((company, index) => (
           <li className="" key={index}>
-            <a
-              className="transition-all hover:text-muted-foreground"
-              href={company.link}
-            >
-              {company.name} +
-            </a>
+            <StyledLink href={company.link}>{company.name} +</StyledLink>
           </li>
         ))}
       </ul>
