@@ -55,7 +55,7 @@ const Intro = () => {
 
 const Work = () => {
   return (
-    <div className="not-prose z-10 grid max-w-screen-2xl gap-2 fade-in sm:grid-cols-2">
+    <div className="not-prose grid max-w-4xl gap-2 fade-in sm:grid-cols-2">
       {projects.map((project, index) => (
         <Project
           key={project.name}
