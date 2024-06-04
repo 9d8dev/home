@@ -1,5 +1,6 @@
 import Balancer from "react-wrap-balancer";
 import { StyledLink } from "@/components/styled-link";
+import { Globe, Bot, Box, Rocket } from "lucide-react";
 
 const companies = [
   { name: "Vivint", link: "https://www.vivint.com" },
@@ -18,21 +19,25 @@ const companies = [
 const services = [
   {
     name: "Software Development",
+    icon: <Box className="h-6 w-6" />,
     description:
       "From full-cycle product design to custom software development, we offer comprehensive solutions including prototyping, wireframing, and rigorous quality assurance to ensure your software meets the highest standards.",
   },
   {
     name: "AI Integration & Development",
+    icon: <Bot className="h-6 w-6" />,
     description:
       "Leverage the power of AI with our services in workflow automation, chatbot and virtual assistant creation, strategic AI consulting, and bespoke AI software development to transform your business processes.",
   },
   {
     name: "Web Development",
+    icon: <Globe className="h-6 w-6" />,
     description:
       "Our web development services encompass responsive design, robust frontend and backend development, tailored e-commerce solutions, and ongoing website maintenance and support to keep your digital presence strong and effective.",
   },
   {
     name: "Marketing Development",
+    icon: <Rocket className="h-6 w-6" />,
     description:
       "Enhance your marketing efforts with our expertise in automation, SEO and SEM services, email campaign management, and data analytics and reporting to drive growth and improve ROI.",
   },
@@ -80,7 +85,7 @@ const Hero = () => {
 const Pricing = () => {
   return (
     <div className="grid gap-4 fade-in md:max-w-2xl">
-      <h3 className="text-xl">
+      <h3 className="text-lg">
         <Balancer>
           Subscriptions to build your business. Pause or cancel anytime.
         </Balancer>
@@ -92,7 +97,12 @@ const Pricing = () => {
             key={index}
             className="bg-muted-background grid gap-4 rounded-lg border bg-accent/25 p-6"
           >
-            <h4>{service.name}</h4>
+            <h4 className="-mt-px flex items-center gap-2 text-xl">
+              <span className="text-[#9d89d8] dark:text-yellow-100">
+                {service.icon}
+              </span>{" "}
+              {service.name}
+            </h4>
             <p className="text-muted-foreground">{service.description}</p>
           </li>
         ))}
