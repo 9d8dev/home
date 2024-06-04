@@ -33,7 +33,7 @@ const Project = ({ name, link, image, desc, year, delay }: ProjectProps) => {
           ></Image>
         </div>
 
-        <div className="flex w-full items-center justify-between gap-2 rounded-b-lg border-t bg-accent/25 p-2 md:group-hover:bg-accent/50">
+        <div className="flex w-full flex-col justify-between gap-2 rounded-b-lg border-t bg-accent/25 p-2 md:flex-row md:items-center md:group-hover:bg-accent/50">
           <p>
             {name}{" "}
             <ExternalLinkIcon className="mb-1 inline h-4 w-4 text-foreground/0 transition-all group-hover:text-foreground/80" />
