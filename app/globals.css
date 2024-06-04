@@ -75,6 +75,21 @@
     }
 }
 
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
 .fade-in {
     -webkit-animation: fade-in 750ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     animation: fade-in 750ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;

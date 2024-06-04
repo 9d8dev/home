@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <>
       {/* Content Grid */}
-      <div className="not-prose z-10 grid max-w-screen-2xl gap-2 sm:grid-cols-2">
+      <div className="not-prose z-10 grid max-w-screen-2xl gap-2 fade-in sm:grid-cols-2">
         {projects.map((project) => (
           <Project
             key={project.name}

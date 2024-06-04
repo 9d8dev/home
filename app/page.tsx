@@ -6,14 +6,13 @@ export default function Home() {
   return (
     <>
       <Intro />
-      <Links />
     </>
   );
 }
 
 const Intro = () => {
   return (
-    <div className="grid gap-4 md:max-w-2xl">
+    <div className="grid gap-4 fade-in md:max-w-2xl">
       <h1 className="sr-only">9d8</h1>
       <h2 className="text-4xl">
         <Balancer>
@@ -52,17 +51,6 @@ const Intro = () => {
         <StyledLink href="https://components.bridger.to">Components</StyledLink>
         , and <StyledLink href="https://router.so">Router.so</StyledLink>.
       </p>
-    </div>
-  );
-};
-
-const Links = () => {
-  return (
-    <div className="flex gap-4">
-      <StyledLink href="/work">/ work</StyledLink>{" "}
-      <StyledLink href="/services">/ services</StyledLink>
-      <StyledLink href="https://github.com/9d8dev">/ github</StyledLink>
-      <StyledLink href="https://twitter.com/9d8dev">/ x</StyledLink>
     </div>
   );
 };

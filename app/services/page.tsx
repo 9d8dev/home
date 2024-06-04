@@ -50,7 +50,7 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <div className="grid gap-4 md:max-w-2xl">
+    <div className="grid gap-4 fade-in md:max-w-2xl">
       <h1 className="sr-only text-4xl font-medium">9d8 Services</h1>
       <h2 className="text-2xl">Subscription Services offered by 9d8</h2>
       <p className="text-muted-foreground">
@@ -79,7 +79,7 @@ const Hero = () => {
 
 const Pricing = () => {
   return (
-    <div className="grid gap-4 md:max-w-2xl">
+    <div className="grid gap-4 fade-in md:max-w-2xl">
       <h3 className="text-xl">
         <Balancer>
           Subscriptions to build your business. Pause or cancel anytime.
@@ -103,7 +103,7 @@ const Pricing = () => {
 
 const Testimonials = () => {
   return (
-    <div className="grid gap-4 md:max-w-2xl">
+    <div className="grid gap-4 fade-in md:max-w-2xl">
       <h3 className="text-xl">
         We&apos;ve worked with some amazing companies.{" "}
       </h3>
