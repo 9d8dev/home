@@ -130,7 +130,13 @@ export default function Page() {
             className="rounded-lg border"
           />
           <div className="grid gap-2">
-            <h3 className="text-lg md:text-xl">{founder.name}</h3>
+            <h3 className="text-lg md:text-xl">
+              {founder.name}{" "}
+              <span className="block text-sm text-muted-foreground sm:inline">
+                {founder.location}
+              </span>
+            </h3>
+
             <p className="text-sm text-muted-foreground">
               {founder.description}
             </p>
