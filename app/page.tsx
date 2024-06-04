@@ -2,10 +2,14 @@ import { StyledLink } from "@/components/styled-link";
 
 import Balancer from "react-wrap-balancer";
 
+import Project from "@/components/project";
+import projects from "@/projects.config";
+
 export default function Home() {
   return (
     <>
       <Intro />
+      <Work />
     </>
   );
 }
@@ -14,7 +18,7 @@ const Intro = () => {
   return (
     <div className="grid gap-4 fade-in md:max-w-2xl">
       <h1 className="sr-only">9d8</h1>
-      <h2 className="text-4xl">
+      <h2 className="text-3xl sm:text-4xl">
         <Balancer>
           Engineering Studio building{" "}
           <span className="text-[#9d89d8] dark:text-yellow-100">Websites</span>{" "}
@@ -51,6 +55,24 @@ const Intro = () => {
         <StyledLink href="https://components.bridger.to">Components</StyledLink>
         , and <StyledLink href="https://router.so">Router.so</StyledLink>.
       </p>
+    </div>
+  );
+};
+
+const Work = () => {
+  return (
+    <div className="not-prose z-10 grid max-w-screen-2xl gap-2 fade-in sm:grid-cols-2">
+      {projects.map((project, index) => (
+        <Project
+          key={project.name}
+          name={project.name}
+          link={project.link}
+          image={project.image}
+          desc={project.description}
+          year={project.year.toString()}
+          delay={index === 0 ? 750 : 750 + 200 * index}
+        />
+      ))}
     </div>
   );
 };

@@ -11,11 +11,15 @@ type ProjectProps = {
   image: StaticImageData;
   desc: string;
   year: string;
+  delay: number;
 };
 
-const Project = ({ name, link, image, desc, year }: ProjectProps) => {
+const Project = ({ name, link, image, desc, year, delay }: ProjectProps) => {
   return (
-    <div className="group h-fit w-fit rounded-lg border shadow-sm">
+    <div
+      className="fade-in-bottom group h-fit w-fit rounded-lg border shadow-sm"
+      style={{ animationDelay: `${delay}ms` }}
+    >
       <Link
         className="relative block overflow-hidden rounded-lg border"
         href={link}

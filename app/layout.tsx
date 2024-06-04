@@ -85,10 +85,9 @@ const Footer = () => {
 const Links = () => {
   return (
     <div className="flex gap-4">
-      <StyledLink href="/work">/ work</StyledLink>{" "}
       <StyledLink href="/services">/ services</StyledLink>
-      <StyledLink href="https://github.com/9d8dev">/ github</StyledLink>
-      <StyledLink href="https://twitter.com/9d8dev">/ x</StyledLink>
+      <StyledLink href="/about">/ about</StyledLink>
+      <StyledLink href="/contact">/ contact</StyledLink>{" "}
     </div>
   );
 };
