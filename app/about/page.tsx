@@ -2,7 +2,7 @@ import { StyledLink } from "@/components/styled-link";
 
 export default function Page() {
   return (
-    <div>
+    <div className="grid gap-4 fade-in md:max-w-2xl">
       <p>
         We also develop open source software with a focus on marketing and
         website creation. Projects include{" "}
