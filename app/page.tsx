@@ -1,4 +1,5 @@
 import { StyledLink } from "@/components/styled-link";
+import { Badge } from "@/components/ui/badge";
 
 import Balancer from "react-wrap-balancer";
 
@@ -37,6 +38,10 @@ const Intro = () => {
           .
         </Balancer>
       </h2>
+      <div className="flex gap-2">
+        <Badge>San Diego, CA</Badge>
+        <Badge>Salt Lake City, UT</Badge>
+      </div>
       <p>
         We partner with innovative companies across the United States to fulfill
         design, code, and marketing needs. Please{" "}
@@ -55,7 +60,7 @@ const Intro = () => {
 
 const Work = () => {
   return (
-    <div className="not-prose grid max-w-4xl gap-2 fade-in sm:grid-cols-2">
+    <div className="not-prose grid max-w-6xl gap-2 fade-in sm:grid-cols-2">
       {projects.map((project, index) => (
         <Project
           key={project.name}
