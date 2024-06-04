@@ -17,16 +17,15 @@ export default function Home() {
 const Intro = () => {
   return (
     <div className="grid gap-4 fade-in md:max-w-2xl">
-      <h1 className="sr-only">9d8</h1>
+      <h1 className="sr-only">9d8 :: software design and development</h1>
       <h2 className="text-3xl sm:text-4xl">
         <Balancer>
           Engineering Studio building{" "}
           <span className="text-[#9d89d8] dark:text-yellow-100">Websites</span>{" "}
-          for teams who value{" "}
-          <span className="text-[#9d89d8] dark:text-yellow-100">Design</span>{" "}
           and{" "}
-          <span className="text-[#9d89d8] dark:text-yellow-100">Marketing</span>
-          .
+          <span className="text-[#9d89d8] dark:text-yellow-100">Software</span>{" "}
+          for teams who value <span className="border-b">Design</span> and{" "}
+          <span className="border-b">Marketing</span>.
         </Balancer>
       </h2>
       <p>
