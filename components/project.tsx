@@ -1,9 +1,7 @@
-import { Badge } from "./ui/badge";
-
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
-import { ExternalLinkIcon, InfoIcon } from "lucide-react";
+import { ExternalLinkIcon } from "lucide-react";
 
 type ProjectProps = {
   name: string;
@@ -24,29 +22,26 @@ const Project = ({ name, link, image, desc, year, delay }: ProjectProps) => {
         className="relative block overflow-hidden rounded-lg border"
         href={link}
       >
-        <Image
-          className="h-full w-full object-cover object-center transition-all md:group-hover:border md:group-hover:blur-sm"
-          width={720}
-          height={500}
-          src={image}
-          alt={name}
-          placeholder="blur"
-        ></Image>
+        <div className="overflow-hidden">
+          <Image
+            className="h-full w-full object-cover object-center transition-all md:group-hover:scale-[1.01]"
+            width={720}
+            height={500}
+            src={image}
+            alt={name}
+            placeholder="blur"
+          ></Image>
+        </div>
 
-        <Badge
-          variant="secondary"
-          className="absolute left-2 top-2 hidden rounded-md shadow-md transition-all md:group-hover:flex"
-        >
-          <InfoIcon className="mr-2 w-3" />
-          {desc}
-        </Badge>
-
-        <Badge
-          variant="secondary"
-          className="absolute bottom-2 left-2 rounded-md shadow-md transition-all md:hidden md:group-hover:flex"
-        >
-          {name} <ExternalLinkIcon className="ml-2 w-3" />
-        </Badge>
+        <div className="flex w-full items-center justify-between gap-2 rounded-b-lg border-t bg-accent/25 p-2 md:group-hover:bg-accent/50">
+          <p>
+            {name}{" "}
+            <ExternalLinkIcon className="mb-px inline h-4 w-4 text-foreground/0 transition-all group-hover:text-foreground/80" />
+          </p>
+          <p className="text-sm text-muted-foreground">
+            {desc} / {year}
+          </p>
+        </div>
       </Link>
     </div>
   );
