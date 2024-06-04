@@ -1,4 +1,5 @@
 import { StyledLink } from "@/components/styled-link";
+import { RouterForm } from "./form";
 
 export default function Page() {
   return (
@@ -12,8 +13,9 @@ export default function Page() {
         <StyledLink href="https://cal.com/9d8dev">
           book a meeting with us
         </StyledLink>{" "}
-        if you are interested in working with us.
+        if you are interested in working with us. Or fill out the form below.
       </p>
+      <RouterForm />
     </div>
   );
 }
