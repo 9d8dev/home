@@ -82,7 +82,7 @@ const founders = [
 export default function Page() {
   return (
     <div className="grid gap-4 fade-in md:max-w-2xl">
-      <h1 className="text-3xl">About 9d8</h1>
+      <h1 className="text-2xl">About 9d8</h1>
       <p>
         9d8 is a marketing-minded software design and development studio founded
         by <StyledLink href="https://cameron.so">Cameron Youngblood</StyledLink>{" "}

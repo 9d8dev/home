@@ -58,16 +58,16 @@ const Hero = () => {
     <div className="grid gap-4 fade-in md:max-w-2xl">
       <h1 className="sr-only text-4xl font-medium">9d8 Services</h1>
       <h2 className="text-2xl">Subscription Services offered by 9d8</h2>
-      <p className="text-muted-foreground">
+      <p>
         At 9d8, we are enthusiastic about collaborating with new brands to
         empower them through innovative technology solutions.
       </p>
-      <h3 className="text-muted-foreground">
+      <h3>
         We offer a variety of monthly partnership subscription services to help
         you grow your business. We work across artificial intelligence,
         marketing, design, and development.
       </h3>
-      <p>
+      <p className="text-[#9d89d8] dark:text-yellow-100">
         Interested? Please{" "}
         <StyledLink href="mailto:bridger@9d8.dev,cameron@9d8.dev">
           email us
