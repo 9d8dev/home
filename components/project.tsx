@@ -15,7 +15,7 @@ type ProjectProps = {
 const Project = ({ name, link, image, desc, year, delay }: ProjectProps) => {
   return (
     <div
-      className="fade-in-bottom group h-fit w-fit rounded-lg border shadow-sm"
+      className="fade-in-bottom group h-fit w-fit rounded-lg border"
       style={{ animationDelay: `${delay}ms` }}
     >
       <Link
