@@ -63,7 +63,7 @@ const Hero = () => {
         marketing, design, and development.
       </h3>
       <p>
-        Intrested? Please{" "}
+        Interested? Please{" "}
         <StyledLink href="mailto:bridger@9d8.dev,cameron@9d8.dev">
           email us
         </StyledLink>{" "}
@@ -115,7 +115,7 @@ const Testimonials = () => {
         ))}
       </ul>
       <p className="text-muted-foreground">
-        See more of our <StyledLink href="/work">work here</StyledLink>.
+        See more of our <StyledLink href="/">work here</StyledLink>.
       </p>
     </div>
   );
