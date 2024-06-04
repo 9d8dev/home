@@ -38,13 +38,7 @@ const Intro = () => {
         </Balancer>
       </h2>
       <p>
-        9d8 is a marketing-minded software design and development studio created
-        by{" "}
-        <StyledLink href="https://cameronyoungblood.com">
-          Cameron Youngblood
-        </StyledLink>{" "}
-        and <StyledLink href="https://bridger.to">Bridger Tower</StyledLink>. We
-        partner with innovative companies across the United States to fulfill
+        We partner with innovative companies across the United States to fulfill
         design, code, and marketing needs. Please{" "}
         <StyledLink href="mailto:bridger@9d8.dev,cameron@9d8.dev">
           email us
@@ -54,14 +48,6 @@ const Intro = () => {
           book a meeting with us
         </StyledLink>{" "}
         if you are interested in working with us.
-      </p>
-      <p>
-        We also develop open source software with a focus on marketing and
-        website creation. Projects include{" "}
-        <StyledLink href="https://wp.9d8.dev">Next WP</StyledLink>,{" "}
-        <StyledLink href="https://github.com/brijr/craft">Craft</StyledLink>,{" "}
-        <StyledLink href="https://components.bridger.to">Components</StyledLink>
-        , and <StyledLink href="https://router.so">Router.so</StyledLink>.
       </p>
     </div>
   );
