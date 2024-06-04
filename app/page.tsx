@@ -5,6 +5,8 @@ import Balancer from "react-wrap-balancer";
 import Project from "@/components/project";
 import projects from "@/projects.config";
 
+import { Component, Rocket } from "lucide-react";
+
 export default function Home() {
   return (
     <>
@@ -24,8 +26,15 @@ const Intro = () => {
           <span className="text-[#9d89d8] dark:text-yellow-100">Websites</span>{" "}
           and{" "}
           <span className="text-[#9d89d8] dark:text-yellow-100">Software</span>{" "}
-          for teams who value <span className="border-b">Design</span> and{" "}
-          <span className="border-b">Marketing</span>.
+          for teams who value{" "}
+          <span className="inline-flex items-center gap-2">
+            <Component className="text-accent-foreground" /> Design
+          </span>{" "}
+          and{" "}
+          <span className="inline-flex items-center gap-2">
+            <Rocket className="text-accent-foreground" /> Marketing
+          </span>
+          .
         </Balancer>
       </h2>
       <p>
