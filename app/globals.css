@@ -96,10 +96,9 @@
 }
 
 .fade-in-bottom {
-    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
-        700ms both;
-    animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 700ms
+    -webkit-animation: fade-in-bottom 750ms cubic-bezier(0.55, 0.085, 0.68, 1)
         both;
+    animation: fade-in-bottom 750ms cubic-bezier(0.55, 0.085, 0.68, 1) both;
 }
 
 @-webkit-keyframes fade-in {

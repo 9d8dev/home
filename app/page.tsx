@@ -70,7 +70,7 @@ const Work = () => {
           image={project.image}
           desc={project.description}
           year={project.year.toString()}
-          delay={index === 0 ? 750 : 750 + 200 * index}
+          delay={index === 0 ? 500 : 500 + 150 * index}
         />
       ))}
     </div>
