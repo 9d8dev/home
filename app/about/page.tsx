@@ -102,7 +102,7 @@ export default function Page() {
             key={index}
             className="grid gap-4 rounded-lg border bg-accent/25 p-6"
           >
-            <h4 className="-mt-px flex items-center gap-2 text-xl">
+            <h4 className="-mt-px flex flex-col gap-2 text-lg md:flex-row md:items-center md:text-xl">
               <span className="text-[#9d89d8] dark:text-yellow-100">
                 {step.icon}
               </span>{" "}
@@ -120,7 +120,7 @@ export default function Page() {
       {founders.map((founder, index) => (
         <div
           key={index}
-          className="flex items-center gap-4 rounded-lg border bg-accent/25 p-6"
+          className="flex flex-col gap-4 rounded-lg border bg-accent/25 p-6 md:flex-row md:items-center"
         >
           <Image
             src={founder.src}
@@ -130,7 +130,7 @@ export default function Page() {
             className="rounded-lg border"
           />
           <div className="grid gap-2">
-            <h3 className="text-xl">{founder.name}</h3>
+            <h3 className="text-lg md:text-xl">{founder.name}</h3>
             <p className="text-sm text-muted-foreground">
               {founder.description}
             </p>

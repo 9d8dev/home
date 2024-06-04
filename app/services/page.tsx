@@ -97,7 +97,7 @@ const Pricing = () => {
             key={index}
             className="bg-muted-background grid gap-4 rounded-lg border bg-accent/25 p-6"
           >
-            <h4 className="-mt-px flex items-center gap-2 text-xl">
+            <h4 className="flex:items-center -mt-px flex flex-col gap-2 text-lg md:flex-row md:text-xl">
               <span className="text-[#9d89d8] dark:text-yellow-100">
                 {service.icon}
               </span>{" "}
