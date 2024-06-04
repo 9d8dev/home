@@ -1,19 +1,19 @@
 import wavefinder from "@/public/projects/wavefinder.jpeg";
 import alpine from "@/public/projects/alpine.jpeg";
 import ampry from "@/public/projects/ampry.jpeg";
-import autobyte from "@/public/projects/autobyte.jpeg";
 import builderkit from "@/public/projects/builderkit.jpeg";
-import craft from "@/public/projects/craft.jpeg";
 import fjord from "@/public/projects/fjord.jpeg";
-import lofi from "@/public/projects/lofi-anime.jpeg";
 import outr from "@/public/projects/outr.jpeg";
 import pandium from "@/public/projects/pandium.jpeg";
-import presets from "@/public/projects/presets.jpeg";
-import bridger from "@/public/projects/bridger.jpeg";
-import cameron from "@/public/projects/cameron.jpeg";
-import socal from "@/public/projects/socal-flights.jpeg";
+import socal from "@/public/projects/socal.jpeg";
 import zion from "@/public/projects/zion.jpeg";
-import windpress from "@/public/projects/windpress.jpeg";
+import asap from "@/public/projects/asap.jpeg";
+import docsai from "@/public/projects/docsai.jpeg";
+import internetservices from "@/public/projects/internet-services.jpeg";
+import model from "@/public/projects/model.jpeg";
+import remblair from "@/public/projects/rem-blair.jpeg";
+import router from "@/public/projects/router.jpeg";
+import travelmellow from "@/public/projects/travel-mellow.jpeg";
 
 const projects = [
   {
@@ -24,25 +24,18 @@ const projects = [
     year: 2023,
   },
   {
-    name: "Alpine Codex",
-    image: alpine,
-    description: "intelligent marketing software",
-    link: "https://alpine.dev",
-    year: 2023,
+    name: "Internet Services",
+    image: internetservices,
+    description: "Internet services for the modern age",
+    link: "https://internetservices.com",
+    year: 2024,
   },
   {
     name: "Ampry",
     image: ampry,
     description: "marketing and lead generation",
     link: "https://ampry.com",
-    year: 2018,
-  },
-  {
-    name: "autobyte",
-    image: autobyte,
-    description: "development-as-a-service platform",
-    link: "https://autobyte.dev",
-    year: 2023,
+    year: 2021,
   },
   {
     name: "BuilderKit",
@@ -52,25 +45,11 @@ const projects = [
     year: 2023,
   },
   {
-    name: "Craft",
-    image: craft,
-    description: "design system and component library",
-    link: "https://github.com/brijr/craft",
-    year: 2023,
-  },
-  {
     name: "Fjord",
     image: fjord,
     description: "headless next js wordpress starter kit",
     link: "https://fjord.dev",
     year: 2024,
-  },
-  {
-    name: "Lofi Anime",
-    image: lofi,
-    description: "generate images in the style of hiroshi nagai",
-    link: "https://lofianime.com",
-    year: 2023,
   },
   {
     name: "Outr.io",
@@ -87,25 +66,18 @@ const projects = [
     year: 2023,
   },
   {
-    name: "Presets",
-    image: presets,
-    description: "AI powered photo editing software",
-    link: "https://presets.com",
-    year: 2024,
-  },
-  {
     name: "Socal Flights",
     image: socal,
     description: "find best deals on flights from LAX",
     link: "https://socal.flights",
-    year: 2021,
+    year: 2020,
   },
   {
-    name: "WindPress",
-    image: windpress,
-    description: "tailwind and wordpress starter theme",
-    link: "https://windpress.wpenginepowered.com",
-    year: 2023,
+    name: "DocsAI",
+    image: docsai,
+    description: "Simplest AI powered content writer",
+    link: "https://docsai.org",
+    year: 2024,
   },
   {
     name: "Zion",
@@ -115,18 +87,46 @@ const projects = [
     year: 2018,
   },
   {
-    name: "bridger.to",
-    image: bridger,
-    description: "homepage of bridger tower",
-    link: "https://bridger.to",
-    year: 1998,
+    name: "ASAP",
+    image: asap,
+    description: "software design and development studio",
+    link: "https://asap.engineering",
+    year: 2024,
   },
   {
-    name: "cameron.so",
-    image: cameron,
-    description: "homepage of cameron youngblood",
-    link: "https://cameronyoungblood.com",
-    year: 1998,
+    name: "Model of Confidence",
+    image: model,
+    description: "Modeling workshop event site",
+    link: "https://modelofconfidence.com",
+    year: 2020,
+  },
+  {
+    name: "Rem Blair",
+    image: remblair,
+    description: "Swimwear and fashion brand",
+    link: "https://remblair.com",
+    year: 2020,
+  },
+  {
+    name: "Alpine Codex",
+    image: alpine,
+    description: "intelligent marketing software",
+    link: "https://alpinecodex.com",
+    year: 2023,
+  },
+  {
+    name: "Router",
+    image: router,
+    description: "Simple lead routing for developers",
+    link: "https://router.so",
+    year: 2024,
+  },
+  {
+    name: "Travel Mellow",
+    image: travelmellow,
+    description: "Travel Blog and Website",
+    link: "https://travelmellow.com",
+    year: 2022,
   },
 ];
 
