@@ -1,5 +1,5 @@
 import { StyledLink } from "@/components/styled-link";
-import { RouterForm } from "./form";
+// import { RouterForm } from "./form";
 
 export default function Page() {
   return (
@@ -15,7 +15,7 @@ export default function Page() {
         </StyledLink>{" "}
         if you are interested in working with us. Or fill out the form below.
       </p>
-      <RouterForm />
+      {/* <RouterForm /> */}
     </div>
   );
 }
