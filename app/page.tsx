@@ -40,7 +40,7 @@ const Intro = () => {
       </h2>
       <div className="flex gap-2">
         <Badge>San Diego, CA</Badge>
-        <Badge>Salt Lake City, UT</Badge>
+        <Badge>St George, UT</Badge>
       </div>
       <p>
         We partner with innovative companies across the United States to fulfill
