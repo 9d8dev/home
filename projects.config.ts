@@ -14,8 +14,30 @@ import model from "@/public/projects/model.jpeg";
 import remblair from "@/public/projects/rem-blair.jpeg";
 import router from "@/public/projects/router.jpeg";
 import travelmellow from "@/public/projects/travel-mellow.jpeg";
+import nextWp from "@/public/projects/next-wp.png";
 
 const projects = [
+  {
+    name: "Router",
+    image: router,
+    description: "Simple lead routing for developers",
+    link: "https://router.so",
+    year: 2024,
+  },
+  {
+    name: "Next WP",
+    image: router,
+    description: "Next.js and Wordpress Starter",
+    link: "https://wp.9d8.dev",
+    year: 2024,
+  },
+  {
+    name: "Outr.io",
+    image: outr,
+    description: "Your AI sales outreach assistant",
+    link: "https://outr.io",
+    year: 2023,
+  },
   {
     name: "WaveFinder",
     image: wavefinder,
@@ -50,13 +72,6 @@ const projects = [
     description: "Headless next js wordpress starter kit",
     link: "https://fjord.dev",
     year: 2024,
-  },
-  {
-    name: "Outr.io",
-    image: outr,
-    description: "Your AI sales outreach assistant",
-    link: "https://outr.io",
-    year: 2023,
   },
   {
     name: "Pandium",
@@ -113,13 +128,6 @@ const projects = [
     description: "Intelligent marketing software",
     link: "https://alpinecodex.com",
     year: 2023,
-  },
-  {
-    name: "Router",
-    image: router,
-    description: "Simple lead routing for developers",
-    link: "https://router.so",
-    year: 2024,
   },
   {
     name: "Travel Mellow",
