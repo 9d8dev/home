@@ -26,7 +26,7 @@ const projects = [
   },
   {
     name: "Next WP",
-    image: router,
+    image: nextWp,
     description: "Next.js and Wordpress Starter",
     link: "https://wp.9d8.dev",
     year: 2024,
