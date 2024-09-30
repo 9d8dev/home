@@ -50,7 +50,7 @@
     "embla-carousel-react": "^8.0.0-rc19",
     "geist": "^1.2.1",
     "lucide-react": "^0.311.0",
-    "next": "^14.2.0",
+    "next": "^14.2.13",
     "prettier-plugin-tailwindcss": "^0.6.1",
     "react": "^18.2.0",
     "react-day-picker": "^8.10.0",
