@@ -14,7 +14,7 @@ import model from "@/public/projects/model.jpeg";
 import remblair from "@/public/projects/rem-blair.jpeg";
 import router from "@/public/projects/router.jpeg";
 import travelmellow from "@/public/projects/travel-mellow.jpeg";
-import nextWp from "@/public/projects/next-wp.png";
+import nextWp from "@/public/projects/next-wp.jpeg";
 
 const projects = [
   {
