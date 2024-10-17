@@ -34,7 +34,7 @@ export async function POST(req: Request) {
 
     // Send the transformed payload to the Discord webhook
     const discordResponse = await fetch(
-      process.env.DISCORD_WEBHOOK_URL as string,
+      process.env.DISCORD_OUTR_WEBHOOK_URL as string,
       {
         method: "POST",
         headers: {
