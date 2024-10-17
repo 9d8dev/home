@@ -11,19 +11,16 @@ export async function POST(req: Request) {
     let content = "";
     switch (body.type) {
       case "organization.created":
-        content = `New organization created: ${body.data.name} (ID: ${body.data.id})`;
+        content = `🏢 New organization created: ${body.data.name} (ID: ${body.data.id})`;
         break;
       case "organization.deleted":
-        content = `Organization deleted: ID ${body.data.id}`;
-        break;
-      case "email.created":
-        content = `New user signed up: ${body.data.to_email_address}`;
+        content = `💣 Organization deleted: ID ${body.data.id}`;
         break;
       case "user.deleted":
-        content = `User deleted: ID ${body.data.id}`;
+        content = `💀 User deleted: ID ${body.data.id}`;
         break;
       case "user.created":
-        content = `New user created: ${body.data.email_addresses[0].email_address} (ID: ${body.data.id})`;
+        content = `🎉 New user created: ${body.data.email_addresses[0].email_address} (ID: ${body.data.id})`;
         break;
       default:
         content = `Unhandled event type: ${body.type}`;
