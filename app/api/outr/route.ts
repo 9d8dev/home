@@ -11,16 +11,16 @@ export async function POST(req: Request) {
     let content = "";
     switch (body.type) {
       case "organization.created":
-        content = `🏢 New organization created: ${body.data.name} (ID: ${body.data.id})`;
+        content = `🏢 New organization created: ${body.data.name}`;
         break;
       case "organization.deleted":
-        content = `💣 Organization deleted: ID ${body.data.id}`;
+        content = `💣 Organization deleted: ID ${body.data.name}`;
         break;
       case "user.deleted":
-        content = `💀 User deleted: ID ${body.data.id}`;
+        content = `💀 User deleted: ID ${body.data.name}`;
         break;
       case "user.created":
-        content = `🎉 New user created: ${body.data.email_addresses[0].email_address} (ID: ${body.data.id})`;
+        content = `🎉 New user created: ${body.data.email_addresses[0].email_address} (ID: ${body.data.name})`;
         break;
       default:
         content = `Unhandled event type: ${body.type}`;
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
 
     const discordPayload = {
       content,
-      username: "Clerk Bot",
+      username: "Outr Bot",
     };
 
     // Send the transformed payload to the Discord webhook
