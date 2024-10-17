@@ -29,7 +29,6 @@ export async function POST(req: Request) {
     const discordPayload = {
       content,
       username: "Clerk Bot",
-      avatar_url: "https://example.com/avatar.png", // Optional: Set a bot avatar
     };
 
     // Send the transformed payload to the Discord webhook
