@@ -14,13 +14,13 @@ export async function POST(req: Request) {
         content = `🏢 New organization created: ${body.data.name}`;
         break;
       case "organization.deleted":
-        content = `💣 Organization deleted: ID ${body.data.name}`;
+        content = `💣 Organization deleted: ID ${body.data.id}`;
         break;
       case "user.deleted":
-        content = `💀 User deleted: ID ${body.data.name}`;
+        content = `💀 User deleted: ID ${body.data.id}`;
         break;
       case "user.created":
-        content = `🎉 New user created: ${body.data.email_addresses[0].email_address} (ID: ${body.data.name})`;
+        content = `🎉 New user created: ${body.data.email_addresses[0].email_address} (ID: ${body.data.id})`;
         break;
       default:
         content = `Unhandled event type: ${body.type}`;
