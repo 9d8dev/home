@@ -32,10 +32,10 @@ const projects = [
     year: 2024,
   },
   {
-    name: "Outr.io",
+    name: "Outr.ai",
     image: outr,
     description: "Your AI sales outreach assistant",
-    link: "https://outr.io",
+    link: "https://outr.ai",
     year: 2023,
   },
   {
